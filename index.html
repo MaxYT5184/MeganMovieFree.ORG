@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Every New Moie - Free Movie</title>
+  <title>Every New Movie - Free Movie</title>
   <style>
     body {
       margin: 0;
@@ -25,6 +25,18 @@
       border-radius: 12px;
       margin-bottom: 20px;
       box-shadow: 0 0 20px #333;
+    }
+
+    .description {
+      background: #222;
+      padding: 15px 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      text-align: left;
+      max-width: 600px;
+      box-shadow: 0 0 10px #000;
+      line-height: 1.6;
+      font-size: 15px;
     }
 
     button {
@@ -73,7 +85,17 @@
 </head>
 <body>
   <h1>M3gan 2.0</h1>
-  <img src="M3gan.jpg" alt="M3gan 2.0 Poster">
+  <img src="M3gan.jpg" alt="M3GAN 2.0 Poster">
+
+  <div class="description">
+    <strong>Director:</strong> Gerard Johnstone<br>
+    <strong>Release:</strong> June 27, 2025<br>
+    <strong>Genre:</strong> Action · Sci‑Fi · Horror [PG‑13]<br>
+    <strong>Runtime:</strong> 120 min<br>
+    <strong>IMDb:</strong> – /10<br>
+    <strong>Age Rating:</strong> PG‑13 – strong violent content, bloody images, some strong language, sexual material & brief drug references
+  </div>
+
   <button onclick="openModal()">🎬 Watch the Movie</button>
 
   <div class="modal" id="movieModal">
