@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Every New Moie - Free Movie</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      color: #f00;
+    }
+
+    img {
+      width: 300px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px #333;
+    }
+
+    button {
+      background-color: #ff3c00;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e13400;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .modal iframe {
+      width: 90vw;
+      height: 90vh;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 28px;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>M3gan 2.0</h1>
+  <img src="M3gan.jpg" alt="M3gan 2.0 Poster">
+  <button onclick="openModal()">🎬 Watch the Movie</button>
+
+  <div class="modal" id="movieModal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <iframe 
+      src="https://drive.google.com/file/d/1EX4uXoSWP4ESdNVcvSTA4H9ndIYGacW5/preview"
+      allow="autoplay"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <script>
+    function openModal() {
+      document.getElementById('movieModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('movieModal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
